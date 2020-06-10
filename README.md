@@ -4,8 +4,6 @@ Nesta análise utilizo dados de óbitos por causas respiratórias ou septicemia 
 
 ## Etapas:
 1-Normalização dos dados pelo tamanho populacional de cada capital  
-2-Agrupamento dos dados em dois grupos:  
-    -Causas respiratórias (exceto COVID) + septicemia  
-    -Covid-19  
+2-Agrupamento dos dados em dois grupos: a-Causas respiratórias (exceto COVID) + septicemia; b-Covid-19  
 3-Cálculo da diferença entre 2020 e 2019 para o acumulado de óbitos do grupo "Causas respiratórias (exceto COVID) + septicemia"  
 4-Cálculo da razão entre a diferença calculada na etapa 3 e o número de óbitos por COVID-19.
