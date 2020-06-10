@@ -2,7 +2,7 @@ library(ggplot2)
 library(tidyverse)
 library(ggrepel)
 
-subn <- readxl::read_excel('subnot.xlsx')%>%filter(!Causa%in%c('OUTRAS'))%>%
+subn <- readxl::read_excel('dados.xlsx')%>%filter(!Causa%in%c('OUTRAS'))%>%
   mutate(Grupo_causa=case_when(Causa=='COVID'~'COVID-19',
                                TRUE~'SRAG/SEPSE/INSUFICIENCIA RESPIRATORIA/PNEUMONIA/INDETERMINADA'))%>%
   group_by(Ano,Grupo_causa,Município)%>%
