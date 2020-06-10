@@ -32,7 +32,7 @@ ggplot()+
        subtitle='*SRAG, Pneumonia, Insuficiência respiratória e complicações respiratórias indeterminadas',
        caption='Fonte de dados: Central de Informações do Registro Civil - CRC Nacional
     Obs: A cidade de Cuiabá não entrou na análise por falta de dados
-    Autor: Sérgio Costa (github.com/sergiocostafh)')+
+    Autor: Sérgio Costa (https://github.com/sergiocostafh/subnotificacao_covid19)')+
   scale_color_manual(values=c(rep('gray',21),rep('darkred',4),'firebrick3'))+
   scale_size_manual(values=c(rep(.7,21),rep(1,4),1.3))+
   scale_x_continuous(limits=c(2018.88,2020.5),breaks=c(2019,2020))+
@@ -63,7 +63,7 @@ ggplot(filter(subn_comp,razao>0))+
        caption='Obs¹: Capitais não listadas no gráfico tiveram menos óbitos por problemas respiratórios ou septicemia em 2020
        Obs²: A cidade de Cuiabá não entrou na análise por falta de dados
        Fonte de dados: Central de Informações do Registro Civil - CRC Nacional
-    Autor: Sérgio Costa (github.com/sergiocostafh)')+
+    Autor: Sérgio Costa (https://github.com/sergiocostafh/subnotificacao_covid19)')+
   coord_flip()+
   cowplot::theme_cowplot(font_size = 13)+
   theme(axis.text.y = element_text(color='black',face='bold'),
